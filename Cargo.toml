@@ -8,15 +8,15 @@ license = "MIT"
 readme = "README.md"
 
 [dependencies]
-katex = "0.4.2"
+katex = "0.4.4"
 clap = "2.33.3"
-mdbook = "0.4.10"
+mdbook = { version = "0.4.20", default-features = false }
 serde = "1.0"
 serde_derive = "1.0"
 serde_json = "1.0"
-toml = "0.5.8"
+toml = "0.5.9"
 log = "0.4"
-reqwest = { version = "0.11.3", features = ["blocking"] }
-regex = "1.5.4"
-lazy_static = "1.0"
-futures = "0.3.15"
+reqwest = { version = "0.11.3", features = ["blocking", "native-tls-vendored"] }
+regex = "1.6"
+lazy_static = "1.4"
+futures = "0.3.21"
